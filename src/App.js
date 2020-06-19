@@ -1,24 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import List from "./components/List/index";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="todo">
+      <div className="todo__sidebar">
+        <List
+          items={[
+            {
+              icon: (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="black"
+                  width="18px"
+                  height="18px"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+              ),
+              name: "All tasks",
+              active: true,
+            },
+          ]}
+        />
+        <List
+          items={[
+            {
+              color: "green",
+              name: "Purchases",
+            },
+            {
+              color: "blue",
+              name: "Frontend",
+              active: true,
+            },
+            {
+              color: "pink",
+              name: "Films and series",
+            },
+          ]}
+        />
+      </div>
+      <div className="todo__tasks"></div>
     </div>
   );
 }
