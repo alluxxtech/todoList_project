@@ -1,6 +1,26 @@
 .list {
   margin-bottom: 30px;
 
+  &__add-button {
+    svg,
+    span,
+    img {
+      opacity: 0.5;
+    }
+    img {
+      height: 15px;
+      width: 15px;
+    }
+
+    &:hover {
+      svg,
+      span,
+      img {
+        opacity: 1;
+      }
+    }
+  }
+
   li {
     display: flex;
     align-items: center;
@@ -13,30 +33,17 @@
       border-radius: 4px;
     }
 
+    .badge {
+      position: relative;
+      left: 4px;
+    }
+
     i {
       display: inline-flex;
       margin-right: 8px;
-      svg {
-        fill: #7c7c7c;
-      }
-    }
-
-    .badge {
-      width: 10px;
-      height: 10px;
-      border-radius: 30px;
-      position: relative;
-      left: 4px;
-
-      &--green {
-        background-color: #42b883;
-      }
-      &--blue {
-        background-color: #64c4ed;
-      }
-      &--pink {
-        background-color: #ffbbcc;
-      }
+      // svg {
+      //   fill: #7c7c7c;
+      // }
     }
   }
 }
