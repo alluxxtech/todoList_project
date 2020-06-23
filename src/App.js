@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import List from "./components/List/index";
 import AddList from "./components/AddList";
+import Tasks from "./components/Tasks";
 
 import db from "./assets/db.json";
 
 function App() {
   const [lists, setLists] = useState(
     db.lists.map((item) => {
-      item.color =
-        db.colors.filter((color) => color.id === item.colorId)[0]?.name || null;
+      item.color = db.colors.filter((color) => color.id === item.colorId)[0]?.name || null;
       return item;
     })
   );
@@ -38,14 +38,15 @@ function App() {
                 </svg>
               ),
               name: "All tasks",
-              active: true,
             },
           ]}
         />
-        <List items={lists} isRemovable />
+        <List items={lists} onRemove={(item) => console.log(item)} isRemovable />
         <AddList onAddList={onAddList} colors={db.colors} />
       </div>
-      <div className="todo__tasks"></div>
+      <div className="todo__tasks">
+        <Tasks />
+      </div>
     </div>
   );
 }

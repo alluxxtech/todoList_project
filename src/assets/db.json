@@ -7,10 +7,10 @@
     { "id": 4, "name": "Personal", "colorId": 1 }
   ],
   "tasks": [
-    { "id": 1, "listId": 2, "text": "Learning database" },
-    { "id": 2, "listId": 2, "text": "Learning patterns" },
-    { "id": 3, "listId": 2, "text": "Learning React hooks" },
-    { "id": 4, "listId": 2, "text": "Learning Redux" }
+    { "id": 1, "listId": 2, "text": "Learning database", "completed": "false" },
+    { "id": 2, "listId": 2, "text": "Learning patterns", "completed": "false" },
+    { "id": 3, "listId": 2, "text": "Learning React hooks", "completed": "true" },
+    { "id": 4, "listId": 2, "text": "Learning Redux", "completed": "false" }
   ],
   "colors": [
     { "id": 1, "hex": "#c9d1d3", "name": "grey" },

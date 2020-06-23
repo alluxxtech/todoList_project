@@ -53,7 +53,6 @@ const AddList = ({ colors, onAddList }) => {
             name: "Add list",
           },
         ]}
-        isRemovable
       />
       {visiblePopup && (
         <div className="add-list__popup">
