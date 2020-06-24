@@ -1,25 +1,97 @@
 {
   "lists": [
-    { "id": 1, "name": "Purchases", "colorId": 5 },
-    { "id": 2, "name": "Frontend", "colorId": 4 },
-    { "id": 2, "name": "Films and series", "colorId": 3 },
-    { "id": 3, "name": "Books", "colorId": 2 },
-    { "id": 4, "name": "Personal", "colorId": 1 }
+    {
+      "id": 1,
+      "name": "Purchases",
+      "colorId": 5
+    },
+    {
+      "id": 2,
+      "name": "Frontend",
+      "colorId": 4
+    },
+    {
+      "id": 3,
+      "name": "Films and series",
+      "colorId": 3
+    },
+    {
+      "id": 4,
+      "name": "Books",
+      "colorId": 2
+    },
+    {
+      "id": 5,
+      "name": "Personal",
+      "colorId": 1
+    }
   ],
   "tasks": [
-    { "id": 1, "listId": 2, "text": "Learning database", "completed": "false" },
-    { "id": 2, "listId": 2, "text": "Learning patterns", "completed": "false" },
-    { "id": 3, "listId": 2, "text": "Learning React hooks", "completed": "true" },
-    { "id": 4, "listId": 2, "text": "Learning Redux", "completed": "false" }
+    {
+      "id": 1,
+      "listId": 2,
+      "text": "Learning database",
+      "completed": "false"
+    },
+    {
+      "id": 2,
+      "listId": 2,
+      "text": "Learning patterns",
+      "completed": "false"
+    },
+    {
+      "id": 3,
+      "listId": 2,
+      "text": "Learning React hooks",
+      "completed": "true"
+    },
+    {
+      "id": 4,
+      "listId": 2,
+      "text": "Learning Redux",
+      "completed": "false"
+    }
   ],
   "colors": [
-    { "id": 1, "hex": "#c9d1d3", "name": "grey" },
-    { "id": 2, "hex": "#42b883", "name": "green" },
-    { "id": 3, "hex": "#64c6ed", "name": "blue" },
-    { "id": 4, "hex": "#ffbbcc", "name": "pink" },
-    { "id": 5, "hex": "#b6e6db", "name": "lime" },
-    { "id": 6, "hex": "#c355f5", "name": "purple" },
-    { "id": 7, "hex": "#110133", "name": "black" },
-    { "id": 8, "hex": "#ff6464", "name": "red" }
+    {
+      "id": 1,
+      "hex": "#c9d1d3",
+      "name": "grey"
+    },
+    {
+      "id": 2,
+      "hex": "#42b883",
+      "name": "green"
+    },
+    {
+      "id": 3,
+      "hex": "#64c6ed",
+      "name": "blue"
+    },
+    {
+      "id": 4,
+      "hex": "#ffbbcc",
+      "name": "pink"
+    },
+    {
+      "id": 5,
+      "hex": "#b6e6db",
+      "name": "lime"
+    },
+    {
+      "id": 6,
+      "hex": "#c355f5",
+      "name": "purple"
+    },
+    {
+      "id": 7,
+      "hex": "#110133",
+      "name": "black"
+    },
+    {
+      "id": 8,
+      "hex": "#ff6464",
+      "name": "red"
+    }
   ]
 }
