@@ -14,7 +14,7 @@
   left: 50%;
   top: 50%;
   width: 750px;
-  min-height: 530px;
+  min-height: 450px;
   transform: translate(-50%, -50%);
   // box-shadow: 1px 2px 20px #f3f3f3;
   border-radius: 10px;
@@ -50,6 +50,21 @@
   &:active {
     background: darken(#4dd599, 10%);
   }
+  &:disabled {
+    background: #d8d8d8;
+  }
+
+  &--grey {
+    background: #f4f6f8;
+    color: #444444;
+
+    &:hover {
+      background: darken(#f4f6f8, 3%);
+    }
+    &:active {
+      background: darken(#f4f6f8, 6%);
+    }
+  }
 }
 
 .field {
@@ -59,6 +74,7 @@
   border-radius: 4px;
   padding: 8px 12px;
   width: 100%;
+  font-size: 14px;
 
   &:focus {
     border-color: #dbdbdb;

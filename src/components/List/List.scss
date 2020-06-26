@@ -48,6 +48,10 @@
 
     span {
       flex: 1;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 115px;
+      white-space: nowrap;
     }
 
     &:hover {

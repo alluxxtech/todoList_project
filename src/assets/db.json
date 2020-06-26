@@ -17,13 +17,23 @@
     },
     {
       "id": 4,
-      "name": "Books",
+      "name": "Books1",
       "colorId": 2
     },
     {
       "id": 5,
       "name": "Personal",
       "colorId": 1
+    },
+    {
+      "name": "faf",
+      "colorId": 3,
+      "id": 6
+    },
+    {
+      "name": "gseg",
+      "colorId": 4,
+      "id": 7
     }
   ],
   "tasks": [
@@ -50,6 +60,42 @@
       "listId": 2,
       "text": "Learning Redux",
       "completed": "false"
+    },
+    {
+      "listId": 2,
+      "text": "123",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "listId": 2,
+      "text": "1234",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "listId": 1,
+      "text": "adaedf",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "listId": 1,
+      "text": "fesf",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "listId": 1,
+      "text": "fdfd1",
+      "completed": false,
+      "id": 9
+    },
+    {
+      "listId": 4,
+      "text": "First book",
+      "completed": false,
+      "id": 10
     }
   ],
   "colors": [
