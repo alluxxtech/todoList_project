@@ -18,31 +18,32 @@ const List = ({ items, isRemovable, onListClick, onRemove, onClickItem, activeIt
 
   return (
     <ul onClick={onListClick} className="list">
-      {items.map((item, idx) => {
-        return (
-          <li
-            key={idx}
-            className={classNames(item.className, {
-              active: item.active ? item.active : activeItem && activeItem.id === item.id,
-            })}
-            onClick={onClickItem ? () => onClickItem(item) : null}
-          >
-            <i>{item.icon ? item.icon : <Badge color={item.color.name} />}</i>
-            <span>
-              {item.name}
-              {item.tasks && ` (${item.tasks.length})`}
-            </span>
-            {isRemovable && (
-              <img
-                onClick={() => removeList(item)}
-                className="list__remove-icon"
-                src={clearSvg}
-                alt="remove icon"
-              ></img>
-            )}
-          </li>
-        );
-      })}
+      {items &&
+        items.map((item, idx) => {
+          return (
+            <li
+              key={idx}
+              className={classNames(item.className, {
+                active: item.active ? item.active : activeItem && activeItem.id === item.id,
+              })}
+              onClick={onClickItem ? () => onClickItem(item) : null}
+            >
+              <i>{item.icon ? item.icon : <Badge color={item.color.name} />}</i>
+              <span>
+                {item.name}
+                {item.tasks && ` (${item.tasks.length})`}
+              </span>
+              {isRemovable && (
+                <img
+                  onClick={() => removeList(item)}
+                  className="list__remove-icon"
+                  src={clearSvg}
+                  alt="remove icon"
+                ></img>
+              )}
+            </li>
+          );
+        })}
     </ul>
   );
 };
